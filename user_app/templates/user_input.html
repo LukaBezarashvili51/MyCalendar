@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Input</title>
+</head>
+<body>
+    <h1>User Input</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label for="first_name">First Name:</label>
+        <input type="text" name="first_name" id="first_name" required><br>
+        <label for="last_name">Last Name:</label>
+        <input type="text" name="last_name" id="last_name" required><br>
+        <label for="birth_year">Birth Year:</label>
+        <input type="number" name="birth_year" id="birth_year" required><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
+ 
